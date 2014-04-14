@@ -1,0 +1,21 @@
+/* Live in Style */
+/* Snappy Food   */
+body {
+   width: 600px;
+   text-align: center;
+   margin: 100px auto;
+   }
+#logo {
+   width: 200px;
+   margin: 0px 0px 20px 30px;
+   }
+h1 {
+   margin-bottom: 10px;
+   }
+h2 {
+   margin-bottom: 20px;
+   }
+p {
+   width: 65%;
+   margin: 0px auto 20px auto;
+   }
