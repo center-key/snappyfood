@@ -1,9 +1,10 @@
 /* Live in Style */
 /* Snappy Food   */
 body {
-   width: 600px;
+   max-width: 600px;
    text-align: center;
-   margin: 100px auto;
+   padding: 100px 3%;
+   margin: 0px auto;
    }
 #logo {
    width: 200px;
