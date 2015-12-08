@@ -1,4 +1,4 @@
-Snappy Food
+### Snappy Food
 
 *Tastier than fast food, more convenient than sit-down*
 
@@ -7,10 +7,10 @@ Snappy Food
 Snappy food is **not** fast food.
 
 **Snappy food is:**
-   * Fresh
-   * Delicious
-   * Healthy
-   * Fast
+   1. Fresh
+   1. Delicious
+   1. Healthy
+   1. Fast
 
 **Websites:**
    * [Snappy Food (snappyfood.org)](http://snappyfood.org)
