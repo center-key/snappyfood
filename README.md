@@ -3,8 +3,9 @@
 *Tastier than fast food, more convenient than sit-down*
 
 ---
+<img align=right width=300 src="websites/www.snappyfood.org/graphics/rice-bowl.png?raw=true">
 
-Snappy food is **not** fast food.
+Snappy food is **_not_** fast food.
 
 **Snappy food is:**
    1. Fresh
