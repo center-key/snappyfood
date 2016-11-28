@@ -1,8 +1,8 @@
 #!/bin/sh
-####################################
-#  Snappy Food                     #
-#  Update files for FTP to server  #
-####################################
+##################################
+# Snappy Food                    #
+# Update files for FTP to server #
+##################################
 
 ftpFolder=~/Dropbox/Documents/Sites/centerkey.com
 webServerUrl=http://localhost/centerkey.com
