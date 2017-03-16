@@ -17,6 +17,7 @@ Snappy food is **_not_** fast food.
    * [Snappy Food (snappyfood.org)](http://snappyfood.org)
    * [Dragon's Grill (dragonsgrill.org)](http://dragonsgrill.org)
 
-===
-Source code is licensed under [MIT](LICENSE.txt).
-The Snappy Food website and the Dragon's Grill menu are licensed under the [Creative Commons Attribution-Share Alike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+---
+Source code is open source under the [MIT License](LICENSE.txt).
+The Snappy Food website and the Dragon's Grill menu are licensed under the
+[Creative Commons Attribution-Share Alike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
