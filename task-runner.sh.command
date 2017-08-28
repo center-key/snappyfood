@@ -4,10 +4,24 @@
 # Update files for FTP to server #
 ##################################
 
-projectHome=$(cd $(dirname $0)/..; pwd)
+projectHome=$(cd $(dirname $0); pwd)
 publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '{ print $2 }')
 publishFolder=$publishWebRoot/centerkey.com
 webServerUrl=http://localhost/centerkey.com
+
+info() {
+   # Check for Node.js installation and download project dependencies
+   cd $projectHome
+   pwd
+   echo
+   echo "Node.js:"
+   which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
+   node --version
+   test -d node_modules || npm install
+   npm update
+   npm outdated
+   echo
+   }
 
 copyGraphics() {
    cd $projectHome/websites
@@ -46,5 +60,8 @@ updateFiles() {
 echo
 echo "Update Files"
 echo "============"
+info
 copyGraphics
 test -w $publishFolder && updateFiles
+cd $projectHome
+npm test
