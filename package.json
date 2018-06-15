@@ -27,9 +27,11 @@
       "node": true
    },
    "devDependencies": {
-      "gulp": "~3.9",
-      "gulp-htmlhint": "~1.0",
-      "gulp-size": "~2.1",
+      "babel-core": "~6.26",
+      "gulp": "~4.0",
+      "gulp-babel": "~7.0",
+      "gulp-htmlhint": "~2.1",
+      "gulp-size": "~3.0",
       "gulp-w3cjs": "~1.3",
       "jshint": "~2.9"
    }
