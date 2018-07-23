@@ -6,14 +6,14 @@
    "repository": "center-key/snappyfood",
    "homepage": "https://github.com/center-key/snappyfood",
    "bugs": "https://github.com/center-key/snappyfood/issues",
-   "docs": "http://snappyfood.org",
+   "docs": "https://snappyfood.org",
    "keywords": [
       "snappy",
       "food"
    ],
    "author": {
       "name": "Center Key",
-      "url": "http://centerkey.com"
+      "url": "https://centerkey.com"
    },
    "scripts": {
       "pretest": "jshint *.js",

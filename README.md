@@ -16,8 +16,8 @@ Snappy food is **_not_** fast food.
    1. Fast
 
 **Websites:**
-   * [Snappy Food (snappyfood.org)](http://snappyfood.org)
-   * [Dragon's Grill (dragonsgrill.org)](http://dragonsgrill.org)
+   * [Snappy Food (snappyfood.org)](https://snappyfood.org)
+   * [Dragon's Grill (dragonsgrill.org)](https://dragonsgrill.org)
 
 ---
 Source code is open source under the [MIT License](LICENSE.txt).
