@@ -9,7 +9,7 @@ publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '
 publishFolder=$publishWebRoot/centerkey.com
 webServerUrl=http://localhost/centerkey.com
 
-info() {
+setupTools() {
    # Check for Node.js installation and download project dependencies
    cd $projectHome
    pwd
@@ -57,11 +57,17 @@ updateFiles() {
    echo
    }
 
+runSpecs() {
+   cd $projectHome
+   echo "Specifications:"
+   npm test
+   echo
+   }
+
 echo
 echo "Update Files"
 echo "============"
-info
+setupTools
 copyGraphics
 test -w $publishFolder && updateFiles
-cd $projectHome
-npm test
+runSpecs
