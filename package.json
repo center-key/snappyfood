@@ -3,7 +3,7 @@
    "version": "0.0.1",
    "description": "Tastier than fast food, more convenient than sit-down",
    "license": "MIT",
-   "repository": "center-key/snappyfood",
+   "repository": "github:center-key/snappyfood",
    "homepage": "https://github.com/center-key/snappyfood",
    "bugs": "https://github.com/center-key/snappyfood/issues",
    "docs": "https://snappyfood.org",
