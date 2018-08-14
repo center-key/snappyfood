@@ -5,15 +5,19 @@
 ##################################
 
 projectHome=$(cd $(dirname $0); pwd)
-publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '{ print $2 }')
-publishFolder=$publishWebRoot/centerkey.com
-webServerUrl=http://localhost/centerkey.com
+
+displayIntro() {
+   cd $projectHome
+   echo
+   echo "Update Files"
+   echo "============"
+   pwd
+   echo
+   }
 
 setupTools() {
    # Check for Node.js installation and download project dependencies
    cd $projectHome
-   pwd
-   echo
    echo "Node.js:"
    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
    node --version
@@ -37,24 +41,22 @@ copyGraphics() {
    echo
    }
 
-updateFiles() {
-   cd $projectHome/websites
-   echo "Source:"
-   pwd
-   ls -l
-   cp -r www.snappyfood.org   $publishFolder
-   cp -r www.dragonsgrill.org $publishFolder
-   cp -r www.dragonsgrill.com $publishFolder
-   echo
-   echo "Destination:"
-   cd $publishFolder
-   pwd
-   ls -l | grep "snappyfood\|dragonsgrill"
-   open $webServerUrl/www.snappyfood.org
-   open $webServerUrl/www.dragonsgrill.org
-   open $webServerUrl/www.dragonsgrill.com
-   echo "Done."
-   echo
+publishWebFiles() {
+   cd $projectHome
+   publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '{ print $2 }')
+   publishSite=$publishWebRoot/centerkey.com
+   publish() {
+      echo "Publishing:"
+      echo $publishSite
+      cp -R websites/www.* $publishSite
+      ls -o $publishSite | grep snappyfood
+      ls -o $publishSite | grep dragonsgrill
+      open http://localhost/centerkey.com/www.snappyfood.org
+      open http://localhost/centerkey.com/www.dragonsgrill.org
+      open http://localhost/centerkey.com/www.dragonsgrill.com
+      echo
+      }
+   test -w $publishSite && publish
    }
 
 runSpecs() {
@@ -64,10 +66,8 @@ runSpecs() {
    echo
    }
 
-echo
-echo "Update Files"
-echo "============"
+displayIntro
 setupTools
 copyGraphics
-test -w $publishFolder && updateFiles
+publishWebFiles
 runSpecs

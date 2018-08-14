@@ -1,4 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.dragonsgrill\.org$
-RewriteRule ^(.*)$ "http\:\/\/dragonsgrill\.org\/$1" [R=301,L]
