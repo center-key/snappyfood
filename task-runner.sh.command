@@ -4,20 +4,16 @@
 # Update files for FTP to server #
 ##################################
 
+banner="Snappy Food"
 projectHome=$(cd $(dirname $0); pwd)
 
-displayIntro() {
+setupTools() {
    cd $projectHome
    echo
-   echo "Update Files"
-   echo "============"
+   echo $banner
+   echo $(echo $banner | sed -e "s/./=/g")
    pwd
    echo
-   }
-
-setupTools() {
-   # Check for Node.js installation and download project dependencies
-   cd $projectHome
    echo "Node.js:"
    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
    node --version
@@ -66,7 +62,6 @@ runSpecs() {
    echo
    }
 
-displayIntro
 setupTools
 copyGraphics
 publishWebFiles
