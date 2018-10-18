@@ -1,10 +1,10 @@
 // Snappy Food
 
 // Imports
-const gulp =             require('gulp');
-const htmlHint =         require('gulp-htmlhint');
-const size =             require('gulp-size');
-const w3cHtmlValidator = require('gulp-w3cjs');
+const gulp =          require('gulp');
+const htmlHint =      require('gulp-htmlhint');
+const htmlValidator = require('gulp-w3c-html-validator');
+const size =          require('gulp-size');
 
 // Setup
 const htmlHintConfig = { 'attr-value-double-quotes': false };
@@ -13,10 +13,10 @@ const htmlHintConfig = { 'attr-value-double-quotes': false };
 function validateHtml() {
    return gulp.src('websites/**/*.html')
       .pipe(size({ showFiles: true }))
-      .pipe(w3cHtmlValidator())
-      .pipe(w3cHtmlValidator.reporter())
       .pipe(htmlHint(htmlHintConfig))
-      .pipe(htmlHint.reporter());
+      .pipe(htmlHint.reporter())
+      .pipe(htmlValidator())
+      .pipe(htmlValidator.reporter());
    }
 
 // Gulp
