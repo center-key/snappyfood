@@ -3,18 +3,16 @@
    "version": "0.0.1",
    "description": "Tastier than fast food, more convenient than sit-down",
    "license": "MIT",
+   "main": "gulpfile.js",
    "repository": "github:center-key/snappyfood",
    "homepage": "https://github.com/center-key/snappyfood",
    "bugs": "https://github.com/center-key/snappyfood/issues",
    "docs": "https://snappyfood.org",
+   "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "snappy",
       "food"
    ],
-   "author": {
-      "name": "Center Key",
-      "url": "https://centerkey.com"
-   },
    "scripts": {
       "pretest": "jshint *.js",
       "test": "gulp validate-html"
@@ -25,6 +23,11 @@
       "undef": true,
       "unused": true,
       "node": true
+   },
+   "dependencies": {
+      "dna.js": "~1.4",
+      "jquery": "~3.3",
+      "web-ignition": "~0.0"
    },
    "devDependencies": {
       "gulp": "~4.0",
