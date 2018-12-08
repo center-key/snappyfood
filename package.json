@@ -13,10 +13,6 @@
       "snappy",
       "food"
    ],
-   "scripts": {
-      "pretest": "jshint *.js",
-      "test": "gulp validate-html"
-   },
    "jshintConfig": {
       "esversion": 6,
       "strict": "implied",
@@ -24,16 +20,20 @@
       "unused": true,
       "node": true
    },
+   "scripts": {
+      "pretest": "jshint *.js",
+      "test": "gulp validate-html"
+   },
    "dependencies": {
-      "dna.js": "~1.4",
+      "dna.js": "~1.5",
       "jquery": "~3.3",
-      "web-ignition": "~0.0"
+      "web-ignition": "~1.0"
    },
    "devDependencies": {
       "gulp": "~4.0",
       "gulp-htmlhint": "~2.2",
-      "gulp-w3c-html-validator": "~1.4",
       "gulp-size": "~3.0",
+      "gulp-w3c-html-validator": "~1.4",
       "jshint": "~2.9"
    }
 }

@@ -10,14 +10,13 @@ const size =          require('gulp-size');
 const htmlHintConfig = { 'attr-value-double-quotes': false };
 
 // Tasks
-function validateHtml() {
-   return gulp.src('websites/**/*.html')
+const validateHtml = () =>
+   gulp.src('websites/**/*.html')
       .pipe(size({ showFiles: true }))
       .pipe(htmlHint(htmlHintConfig))
       .pipe(htmlHint.reporter())
       .pipe(htmlValidator())
       .pipe(htmlValidator.reporter());
-   }
 
 // Gulp
 gulp.task('validate-html', validateHtml);
