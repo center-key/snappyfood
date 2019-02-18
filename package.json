@@ -27,13 +27,13 @@
    "dependencies": {
       "dna.js": "~1.5",
       "jquery": "~3.3",
-      "web-ignition": "~1.0"
+      "web-ignition": "~1.1"
    },
    "devDependencies": {
       "gulp": "~4.0",
       "gulp-htmlhint": "~2.2",
       "gulp-size": "~3.0",
       "gulp-w3c-html-validator": "~1.4",
-      "jshint": "~2.9"
+      "jshint": "~2.10"
    }
 }
