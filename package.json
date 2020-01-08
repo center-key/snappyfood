@@ -26,12 +26,12 @@
       "test": "gulp validate-html"
    },
    "dependencies": {
-      "dna.js": "~1.5",
+      "dna.js": "~1.6",
       "jquery": "~3.4",
-      "web-ignition": "~1.1"
+      "web-ignition": "~1.2"
    },
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~5.11",
+      "@fortawesome/fontawesome-free": "~5.12",
       "gulp": "~4.0",
       "gulp-htmlhint": "~3.0",
       "gulp-size": "~3.0",
