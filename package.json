@@ -35,7 +35,7 @@
       "gulp": "~4.0",
       "gulp-htmlhint": "~3.0",
       "gulp-size": "~3.0",
-      "gulp-w3c-html-validator": "~1.4",
-      "jshint": "~2.10"
+      "gulp-w3c-html-validator": "~2.0",
+      "jshint": "~2.11"
    }
 }
