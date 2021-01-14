@@ -5,7 +5,7 @@ _Tastier than fast food, more convenient than sit-down_
 
 [![License:CC](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 &nbsp;
-[![Build](https://travis-ci.org/center-key/snappyfood.svg)](https://travis-ci.org/center-key/snappyfood)
+[![Build](https://travis-ci.com/center-key/snappyfood.svg)](https://travis-ci.com/center-key/snappyfood)
 
 Snappy food is **_not_** fast food.
 

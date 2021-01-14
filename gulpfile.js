@@ -1,10 +1,10 @@
 // Snappy Food
 
 // Imports
-const gulp =          require('gulp');
-const htmlHint =      require('gulp-htmlhint');
-const htmlValidator = require('gulp-w3c-html-validator');
-const size =          require('gulp-size');
+import gulp from          'gulp';
+import htmlHint from      'gulp-htmlhint';
+import htmlValidator from 'gulp-w3c-html-validator';
+import size from          'gulp-size';
 
 // Setup
 const htmlHintConfig = { 'attr-value-double-quotes': false };

@@ -3,6 +3,7 @@
    "version": "0.0.1",
    "description": "Tastier than fast food, more convenient than sit-down",
    "license": "MIT",
+   "type": "module",
    "main": "gulpfile.js",
    "repository": "github:center-key/snappyfood",
    "homepage": "https://github.com/center-key/snappyfood",
@@ -26,7 +27,7 @@
       "test": "gulp validate-html"
    },
    "dependencies": {
-      "dna.js": "~1.6",
+      "dna.js": "~1.7",
       "jquery": "~3.5",
       "web-ignition": "~1.3"
    },
