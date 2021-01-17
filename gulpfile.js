@@ -1,10 +1,10 @@
 // Snappy Food
 
 // Imports
-import gulp from          'gulp';
-import htmlHint from      'gulp-htmlhint';
-import htmlValidator from 'gulp-w3c-html-validator';
-import size from          'gulp-size';
+import gulp from     'gulp';
+import htmlHint from 'gulp-htmlhint';
+import size from     'gulp-size';
+import { htmlValidator } from 'gulp-w3c-html-validator';
 
 // Setup
 const htmlHintConfig = { 'attr-value-double-quotes': false };
@@ -15,7 +15,7 @@ const validateHtml = () =>
       .pipe(size({ showFiles: true }))
       .pipe(htmlHint(htmlHintConfig))
       .pipe(htmlHint.reporter())
-      .pipe(htmlValidator())
+      .pipe(htmlValidator.analyzer())
       .pipe(htmlValidator.reporter());
 
 // Gulp
