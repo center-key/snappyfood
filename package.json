@@ -28,7 +28,7 @@
    },
    "dependencies": {
       "dna.js": "~1.7",
-      "jquery": "~3.5",
+      "jquery": "~3.6",
       "web-ignition": "~1.4"
    },
    "devDependencies": {
