@@ -35,8 +35,8 @@
       "@fortawesome/fontawesome-free": "~5.15",
       "gulp": "~4.0",
       "gulp-htmlhint": "~4.0",
-      "gulp-size": "~3.0",
-      "gulp-w3c-html-validator": "~3.0",
-      "jshint": "~2.12"
+      "gulp-size": "~4.0",
+      "gulp-w3c-html-validator": "~3.2",
+      "jshint": "~2.13"
    }
 }
