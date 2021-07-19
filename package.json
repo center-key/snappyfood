@@ -23,7 +23,7 @@
       "node": true
    },
    "scripts": {
-      "pretest": "jshint *.js",
+      "pretest": "jshint . --exclude node_modules",
       "test": "gulp validate-html"
    },
    "dependencies": {
