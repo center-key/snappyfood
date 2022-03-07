@@ -3,7 +3,7 @@
 
 body {
    max-width: 550px;
-   background: url(graphics/wooden-rice-bowl.jpg) center center;  /* public domain sos.ms.gov */
+   background: tan url(graphics/wooden-rice-bowl.jpg) center center fixed;  /* public domain sos.ms.gov */
    background-size: cover;
    text-align: center;
    padding: 60px 3%;

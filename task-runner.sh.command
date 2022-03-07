@@ -8,6 +8,7 @@ banner="Snappy Food"
 projectHome=$(cd $(dirname $0); pwd)
 apacheCfg=/usr/local/etc/httpd
 apacheLog=/usr/local/var/log/httpd/error_log
+webDocRoot=$(grep ^DocumentRoot $apacheCfg/httpd.conf | awk -F'"' '{ print $2 }')
 
 setupTools() {
    cd $projectHome
@@ -42,8 +43,7 @@ copyGraphics() {
 
 publishWebFiles() {
    cd $projectHome
-   publishWebRoot=$(grep ^DocumentRoot $apacheCfg/httpd.conf | awk -F'"' '{ print $2 }')
-   publishSite=$publishWebRoot/centerkey.com
+   publishSite=$webDocRoot/centerkey.com
    publish() {
       echo "Publishing:"
       echo $publishSite
