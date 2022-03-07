@@ -4,7 +4,7 @@
    "description": "Tastier than fast food, more convenient than sit-down",
    "license": "MIT",
    "type": "module",
-   "main": "gulpfile.js",
+   "main": "websites/www.snappyfood.org/index.html",
    "repository": "github:center-key/snappyfood",
    "homepage": "https://github.com/center-key/snappyfood",
    "bugs": "https://github.com/center-key/snappyfood/issues",
@@ -24,7 +24,7 @@
    },
    "scripts": {
       "pretest": "jshint . --exclude node_modules",
-      "test": "gulp validate-html"
+      "test": "w3c-html-validator"
    },
    "dependencies": {
       "dna.js": "~1.9",
@@ -33,10 +33,7 @@
    },
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.0",
-      "gulp": "~4.0",
-      "gulp-htmlhint": "~4.0",
-      "gulp-size": "~4.0",
-      "gulp-w3c-html-validator": "~5.1",
-      "jshint": "~2.13"
+      "jshint": "~2.13",
+      "w3c-html-validator": "~1.0"
    }
 }
