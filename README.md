@@ -3,9 +3,9 @@
 
 _Tastier than fast food, more convenient than sit-down_
 
-[![License:CC](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License:CC](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgray.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 &nbsp;
-[![Build](https://github.com/center-key/snappyfood/workflows/build/badge.svg)](https://github.com/center-key/snappyfood/actions?query=workflow%3Abuild)
+[![Build](https://github.com/center-key/snappyfood/workflows/build/badge.svg)](https://github.com/center-key/snappyfood/actions/workflows/run-spec-on-push.yaml)
 
 Snappy food is **_not_** fast food.
 
