@@ -27,7 +27,7 @@
       "test": "html-validator"
    },
    "dependencies": {
-      "dna.js": "~2.0",
+      "dna-engine": "~2.2",
       "jquery": "~3.6",
       "web-ignition": "~1.5"
    },
