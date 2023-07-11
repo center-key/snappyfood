@@ -24,7 +24,7 @@ setupTools() {
    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
    node --version
    npm install --no-fund
-   npm update
+   npm update --no-fund
    npm outdated
    echo
    }
@@ -54,7 +54,6 @@ publishWebFiles() {
       ls -o $publishSite | grep dragonsgrill
       open http://localhost/centerkey.com/www.snappyfood.org
       open http://localhost/centerkey.com/www.dragonsgrill.org
-      open http://localhost/centerkey.com/www.dragonsgrill.com
       echo
       }
    test -w $publishSite && publish
