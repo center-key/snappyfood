@@ -33,11 +33,11 @@ setupTools() {
 copyGraphics() {
    cd $projectHome/websites
    echo "Graphics:"
-   cp -v ../graphics/bookmark.png             www.snappyfood.org/graphics
+   cp -v ../graphics/bookmark-icon.png        www.snappyfood.org/graphics
    cp -v ../graphics/rice-bowl.png            www.snappyfood.org/graphics
    cp -v ../graphics/rice-bowl-card.png       www.snappyfood.org/graphics
    cp -v ../graphics/rice-bowl-mobile.png     www.snappyfood.org/graphics/mobile-home-screen.png
-   cp -v ../graphics/bookmark.png             www.dragonsgrill.org/graphics
+   cp -v ../graphics/bookmark-icon.png        www.dragonsgrill.org/graphics
    cp -v ../graphics/dragons-grill.png        www.dragonsgrill.org/graphics
    cp -v ../graphics/dragons-grill-card.png   www.dragonsgrill.org/graphics
    cp -v ../graphics/dragons-grill-mobile.png www.dragonsgrill.org/graphics/mobile-home-screen.png
