@@ -1,5 +1,6 @@
-/* Live in Style */
-/* Snappy Food   */
+/* Live in Style               */
+/* Snappy Food                 */
+/* center-key/snappyfood ~ MIT */
 
 body {
    max-width: 550px;
@@ -8,6 +9,10 @@ body {
    text-align: center;
    padding: 60px 3%;
    margin: 0px auto;
+   }
+@media (prefers-color-scheme: dark) { body { color: dimgray; } }
+body >footer {
+   color: black;
    }
 #logo {
    width: 300px;
