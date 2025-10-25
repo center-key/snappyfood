@@ -34,7 +34,7 @@
       "web-ignition": "~2.4"
    },
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~7.0",
+      "@fortawesome/fontawesome-free": "~7.1",
       "jshint": "~2.13",
       "w3c-html-validator": "~1.9"
    }
