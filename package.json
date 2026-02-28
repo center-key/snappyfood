@@ -30,12 +30,12 @@
       "test": "html-validator websites"
    },
    "dependencies": {
-      "dna-engine": "~3.3",
-      "web-ignition": "~2.4"
+      "dna-dom": "~3.3",
+      "web-ignition": "~2.5"
    },
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~7.1",
+      "@fortawesome/fontawesome-free": "~7.2",
       "jshint": "~2.13",
-      "w3c-html-validator": "~1.9"
+      "w3c-html-validator": "~2.2"
    }
 }
