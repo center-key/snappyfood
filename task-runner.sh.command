@@ -17,8 +17,8 @@ setupTools() {
    echo $banner
    echo $(echo $banner | sed s/./=/g)
    pwd
-   test -d .git || { echo "Project must be in a git repository."; exit; }
-   git restore dist/* &>/dev/null
+   [ -d .git ] || { echo "Project must be in a git repository."; exit; }
+   [ -d dist ] && git restore dist
    git pull --ff-only
    echo
    echo "Node.js:"
@@ -57,7 +57,7 @@ publishWebFiles() {
       open http://localhost/centerkey.com/www.dragonsgrill.org
       echo
       }
-   test -w $publishSite && publish
+   [ -w $publishSite ] && publish
    }
 
 runSpecs() {
